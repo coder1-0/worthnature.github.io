@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    height: 10vh;
+    background-color: #ee8c68cb;
+    background-image: linear-gradient(315deg, #ee8c68e7 0%, #eb6b9cb6 74%);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: black;
+    font-size: 45px;
+    font-weight:500;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 10px 15px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    padding: 10px 15px;
+    font-size:25px;
+}
+
+nav ul li a{
+    color: black;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+nav ul li a.active , a:hover{
+    color: green;
+    background-color:white;
+    transition: all .3s ease-in-out;
+}
+
+@media(max-width:1000px){
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        background-color :#7cffcb;
+        background-image :linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        color: black;
+        font-size: 45px;
+        margin-top: 50px;
+        font-weight:500;
+        font-family: 'Baloo Bhai 2', cursive;
+        padding: 10px 15px;
+    }
+    nav ul{
+        margin-bottom: 70px;
+        }
+    nav ul li{
+            padding: 10px 15px;
+            font-size:30px;
+        }
+}
+@media(max-width:660px){
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 65vh;
+        background-color :#7cffcb;
+        background-image :linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%, rgba(224, 52, 81, 0.363));
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        color: black;
+        font-size: 45px;
+        margin-top: 50px;
+        font-weight:500;
+        font-family: 'Baloo Bhai 2', cursive;
+        padding: 10px 15px;
+    }
+    
+    nav ul{
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+    }
+    nav ul li{
+        padding: 10px 0px;
+        font-size:25px;
+        margin: 10px;
+        text-align: center;
+    }
+    nav ul li a.active , a:hover{
+        color: blue;
+        background:none;
+        transition: all .3s ease-in-out;
+    }
+}
+@media(max-width:300px){
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        background-color :#7cffcb;
+        background-image :linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+}
+
+/*Below code is for hero*/
+
+.hero_container{
+    height: 70vh;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.329) , rgba(255, 255, 0, 0.329)),url("forest-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_container .hero_text{
+    color: white;
+    text-align: center;
+}
+
+.hero_container .hero_text h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.hero_container .hero_text p{
+    font-size: 35px;
+    font-weight: 500;
+    line-height:2em;
+}
+
+.hero_container .hero_text .hero_btn{
+    font-size: 25px;
+    padding: 10px 15px;
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+    display: inline-block;
+    border-radius: 28px;
+    transition: all .3s ease-in-out;
+}
+
+.hero_container .hero_text .hero_btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.3);
+}
+
+@media(max-width:660px){
+    .hero_container{
+        height: 60vh;
+        background-image: linear-gradient(rgba(255, 0, 0, 0.329) , rgba(255, 255, 0, 0.329)),url("forest-hero.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:300px){
+    .hero_container .hero_text h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    
+    .hero_container .hero_text p{
+        font-size: 30px;
+        font-weight: 500;
+        line-height:2em;
+    }
+    
+    .hero_container .hero_text .hero_btn{
+        font-size: 20px;
+        padding: 10px 15px;
+        background-color: black;
+        margin-top: 10px;
+        color: white;
+        display: inline-block;
+        border-radius: 28px;
+        transition: all .3s ease-in-out;
+    }
+}
+
+/*Below code is for cards_1 below hero*/
+
+.head {
+    text-align: center;
+    line-height: 2em;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content_1{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.content_1 .album{
+    width: 300px;
+    background-color:#008039;
+    text-align: center;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: all .5s ease-in-out;
+}
+
+.content_1 .album:hover{
+    width: 300px;
+    background-color:#fafd3b;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transform: scale(1.03);
+}
+
+.content_1 .album .album-image{
+    background-color: aqua;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.content_1 .album h2,p{
+    padding: 10px;
+}
+
+#img_1{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377), rgba(157, 184, 8, 0.603)),url(plant1.jpg);
+    transition: all .5s ease-in-out;
+}
+#img_2{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377), rgba(145, 184, 6, 0.5)),url(animal1.jpg);
+    transition: all .5s ease-in-out;
+}#img_3{
+    transition: all .5s ease-in-out;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377), rgba(163, 189, 15, 0.486)),url(bird1.jpg);
+}#img_4{
+    transition: all .5s ease-in-out;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377), rgba(144, 194, 7, 0.438)),url(pollu1.jpg);
+}#img_5{
+    transition: all .5s ease-in-out;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377), rgba(191, 202, 28, 0.438)),url(forest1.jpg);
+}
+#img_1:hover{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377), rgba(157, 184, 8, 0.603)),url(plant2.jpg);
+}
+#img_2:hover{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377), rgba(145, 184, 6, 0.5)),url(animal2.jpg);
+}#img_3:hover{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377), rgba(163, 189, 15, 0.486)),url(bird2.jpg);
+}#img_4:hover{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377), rgba(144, 194, 7, 0.438)),url(pollu2.jpg);
+}#img_5:hover{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.377), rgba(191, 202, 28, 0.438)),url(forest2.jpg);
+}
+
+/*Below Code is for about us section*/
+
+.about{
+    margin: 40px 0px 20px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 3em;
+    font-size: 25px;
+}
+
+.content_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: greenyellow;
+    padding: 30px 20px;
+    margin: 0px 50px 20px 50px;
+}
+
+.content_2 h3{
+    font-size: 25px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.content_2 p{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width:400px){
+    .content_2 h3{
+        font-size: 20px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    
+    .content_2 p{
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+/* Below code is for Contact Us*/
+
+.contact{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 3em;
+    font-size: 25px;
+}
+
+.form_here{
+    display: flex;
+    justify-content: center;
+}
+.form_here .basicinfo{
+    display: flex;
+}
+.form_here label{
+    display: block;
+    font-size: 25px;
+    line-height: 2em;
+    padding: 10px 15px;
+}
+
+input{
+    padding: 12px;
+    width: 300px;
+    font-size: 20px;
+    outline: 2px solid green;
+    border-radius: 5px;
+}
+
+.form_here .opinions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+textarea{
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 20px;
+    font-size: 20px;
+    outline: 2px solid green;
+}
+
+.submission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submission input{
+    display:block;
+    margin: 10px;
+}
+
+@media(max-width:850px){
+    .form_here{
+        display: flex;
+        flex-direction: column;
+    }
+    .form_here .basicinfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form_here label{
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        line-height: 2em;
+        padding: 10px 15px;
+    }
+    
+    input{
+        display: block;
+        padding: 12px;
+        width: 300px;
+        font-size: 20px;
+        outline: 2px solid green;
+        border-radius: 5px;
+    }
+    .opinions{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    textarea{
+        padding: 12px;
+        margin: 20px;
+        width: 80vw;
+        border-radius: 5px;
+        font-size: 20px;
+        outline: 2px solid green;
+    }
+    
+    .submission{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .submission input{
+        display:block;
+        margin: 10px;
+    }
+    
+}
+
+footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3{
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 600;
+    padding: 30px;
+    cursor: pointer;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+@media(max-width:650px){
+    footer{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+        justify-content: space-around;
+        align-items: center;
+    } 
+}
